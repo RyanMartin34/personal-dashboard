@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Personal Dashboard</title>
+  </head>
+  <body>
+    <section id="top-section">
+      <div class="top-right">
+        <div class="weather-top">
+          <img class="current-condition" />
+          <p class="current-temp"></p>
+        </div>
+        <p class="current-location"></p>
+      </div>
+
+      <div class="top-left">
+        <div class="crypto-top">
+          <img class="current-coin-icon" />
+          <p class="current-price"></p>
+        </div>
+        <p class="current-coin-name"></p>
+      </div>
+    </section>
+
+    <section id="middle-section">
+      <h1 class="current-time"></h1>
+      <h2 class="current-date"></h2>
+    </section>
+
+    <section id="bottom-section">
+      <p class="current-quote"></p>
+      <p class="current-author"></p>
+    </section>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
