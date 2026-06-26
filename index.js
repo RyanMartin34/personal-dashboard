@@ -57,7 +57,10 @@ fetch("https://api.coingecko.com/api/v3/coins/bitcoin")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
-    document.querySelector(".current-coin-icon").src = data.image.thumb;
+    document.querySelector(".current-coin-icon").src = data.image.small;
+    document.querySelector(".current-price").textContent =
+      `£${data.market_data.current_price.gbp}`;
+    document.querySelector(".current-coin-name").textContent = data.name;
   })
   .catch((error) => console.error(error));
 
